@@ -1,0 +1,9 @@
+*.js
+!src/cli.js
+!test/**/*.js
+lib
+.idea
+node_modules
+npm-debug.log
+coverage
+
