@@ -10,11 +10,8 @@
   "author": "Vyacheslav Chub<vyacheslav.chub@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@types/chalk": "0.4.31",
-    "@types/levenshtein": "1.0.1",
-    "@types/lodash": "4.14.62",
-    "@types/node": "7.0.13",
     "chalk": "1.1.3",
+    "esprima": "4.0.0",
     "levenshtein": "1.0.5",
     "lodash": "4.17.4",
     "terminal-kit": "1.13.7",
@@ -22,6 +19,9 @@
     "typescript": "2.3.4"
   },
   "devDependencies": {
+    "@types/chalk": "0.4.31",
+    "@types/levenshtein": "1.0.1",
+    "@types/lodash": "4.14.62",
     "@types/chai": "3.5.1",
     "@types/es6-shim": "0.31.33",
     "@types/mocha": "2.2.41",

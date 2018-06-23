@@ -1,7 +1,13 @@
-const fs = require('fs');
+import * as fs from 'fs';
+
 const esprima = require('esprima');
-const program = fs.readFileSync('./test/fixtures/similar.js', 'utf-8');
 
-const par = esprima.parse(program);
+export function prepareTree(file: string) {
+  const content = fs.readFileSync(file, 'utf-8');
 
-console.log(JSON.stringify(par, null, 2));
+  return esprima.parse(content);
+}
+
+export function walkCode(codeTree) {
+  console.log(JSON.stringify(codeTree, null, 2));
+}
